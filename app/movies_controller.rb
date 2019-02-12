@@ -89,7 +89,6 @@ def can_update_multiple_items_at_once
 end
 
 def can_destroy_a_single_item
-  #binding.pry
   Movie.create(title: "That One Where the Guy Kicks Another Guy Once")
   movie = Movie.last
   movie.delete
